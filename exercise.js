@@ -34,6 +34,64 @@ function upper(word) {
 
 console.log(upper("I love you"));
 
-// TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST
+// Using the inbuilt number methods only
 
-/* another <change className=""></change> */
+// 1
+
+function decimalPlace(num) {
+	return num.toFixed(2);
+}
+
+console.log(decimalPlace(1.23456789));
+
+// 2
+
+function toStr(str) {
+	return Number(str);
+}
+
+console.log(toStr("342423"));
+
+// Using the inbuilt array methods only
+
+//1
+
+function firstAndLast(arr) {
+	// return arr.slice(0, 1) + arr.pop();
+	return arr.shift() + " " + arr.pop();
+}
+
+const colors = ["red", "yellow", "green", "blue"];
+
+console.log(firstAndLast(colors));
+
+// 2
+
+function addToArray(arr, value) {
+	arr.push(value);
+	return arr;
+}
+
+const moreColors = ["red", "yellow", "green", "blue"];
+
+console.log(addToArray(moreColors, "orange"));
+
+// 3
+
+function thirdElement(arr) {
+	return console.log(arr[2]);
+}
+
+const evenMoreColor = ["red", "yellow", "green", "blue"];
+
+thirdElement(evenMoreColor);
+
+// 4
+
+const min = (arr) => {
+	return Math.min(...arr);
+};
+
+const numArr = [23123, 2, -328, 0];
+
+console.log(min(numArr));
