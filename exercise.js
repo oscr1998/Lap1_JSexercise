@@ -95,3 +95,12 @@ const min = (arr) => {
 const numArr = [23123, 2, -328, 0];
 
 console.log(min(numArr));
+
+// #################
+
+function travel(country,flightLength,home="England"){
+    const startJourney = "London"
+    return `I started my journey in ${startJourney} and I flew from ${home} and it took me ${flightLength} to get to ${country}.`
+}
+
+console.log(travel('Portugal','4 hours'))
